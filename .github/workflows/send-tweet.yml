@@ -3,6 +3,7 @@ on: [push]
 jobs:
   tweet:
     runs-on: ubuntu-latest
+    if: ${{ github.repository == 'MichaelCade/90DaysOfDevOps' }}
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
