@@ -20,6 +20,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    if: ${{ github.repository == 'MichaelCade/90DaysOfDevOps' }}
 
     steps:
     - uses: actions/checkout@v2
